@@ -16,6 +16,15 @@ public class Enseignant {
     private  Integer id;
     private String nom;
     private  String prenom;
+    private String matieres;
+
+    public String getMatieres() {
+        return matieres;
+    }
+
+    public void setMatieres(String matieres) {
+        this.matieres = matieres;
+    }
 
     public Integer getId() {
         return id;
