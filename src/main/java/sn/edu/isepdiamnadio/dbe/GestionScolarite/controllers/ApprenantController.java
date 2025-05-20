@@ -9,11 +9,18 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/apprenants")
+@CrossOrigin("http://localhost:4200")
 public class ApprenantController {
     @Autowired
     private ApprenantService apprenantService;
     @GetMapping
     public List<Apprenant> findAll(){
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return apprenantService.findAll();
     }
 

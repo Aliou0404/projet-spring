@@ -14,6 +14,9 @@ public class Apprenant {
     private String nom;
     private  String prenom;
     private Integer promo;
+    private  String image;
+
+
 
     public Integer getPromo() {
         return promo;
@@ -49,6 +52,13 @@ public class Apprenant {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
 }
